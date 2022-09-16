@@ -1,4 +1,5 @@
 //user input
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Greeting {
@@ -15,19 +16,26 @@ public class Greeting {
 
 
         //Object
-        Scanner userOne = new Scanner(System.in);
-        //Enter username
-        System.out.println(inputUser);
+//        Scanner userOne = new Scanner(System.in);
+//        //Enter username
+//        System.out.println(inputUser);
+//
+//        //Username enter will input
+//        storedInfo = userOne.nextLine();
 
-        //Username enter will input
-        storedInfo = userOne.nextLine();
-
-        if (storedInfo.equals("Alice") || storedInfo.equals("alice")){
-            System.out.println(outputUser + storedInfo + "!");
-        } else if (storedInfo.equals("Bob") || storedInfo.equals("bob")){
-            System.out.println(outputUser + storedInfo + "!");
-        } else {
-            System.out.println(error);;
+        while (true){
+            Scanner userOne = new Scanner(System.in);
+            System.out.println(inputUser);
+            storedInfo = userOne.nextLine();
+            if (storedInfo.equals("Alice") || storedInfo.equals("alice")){
+                System.out.println(outputUser + storedInfo + "!");
+                break;
+            } else if (storedInfo.equals("Bob") || storedInfo.equals("bob")){
+                System.out.println(outputUser + storedInfo + "!");
+                break;
+            } else {
+                System.out.println(error);;
+            }
         }
     }
 }

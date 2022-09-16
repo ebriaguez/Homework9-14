@@ -17,18 +17,28 @@ public class HomeworkThree {
         String whatKind = "What kind?";
         String whatName = "What's the pet's name?";
 
-        //Object
+        //new object
         Scanner userOne = new Scanner(System.in);
-        System.out.println(howMany + " " + whatKind + " " + whatName);
 
+
+        //sys out how many prompt
+        System.out.println(howMany);
+
+
+        //store input in numberofpets
         numberOfPets = userOne.nextInt();
+
+        //sys out what kind prompt
+        System.out.println(whatKind);
+
+        //store input in petinfo
         petInfo = userOne.nextLine();
-        petName = userOne.nextLine();
+//        petName = userOne.nextLine();
 
-
-        System.out.println(numberOfPets);
-        System.out.println(petInfo);
-        System.out.println(petName);
+        //print out stored info
+//        System.out.println(numberOfPets);
+//        System.out.println(petInfo);
+//        System.out.println(petName);
 
 
 
